@@ -1,0 +1,30 @@
+key value pair:
+	A property is a “key: value” pair, where key is a string (also called a “property name”), 
+	and value can be anything. We can imagine an object as a cabinet with signed files. 
+	Every piece of data is stored in its file by the key.
+
+.filter function: 
+	The filter() method creates a new array with all elements that pass the test implemented 
+	by the provided function.
+
+	Example:
+		const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+		const result = words.filter(word => word.length > 6);
+
+		console.log(result);
+		// expected output: Array ["exuberant", "destruction", "present"]
+req.query
+	The req.query property is an object containing the property for each query string parameter 
+	in the route. query is a request object that is populated by request query strings that are 
+	found in a URL. These query strings are in key-value form. They start after the question mark
+	in any URL. And if there are more than one, they are separated with the ampersand.
+
+	In the issue, req.query.category & minDateStr, the name of them is what is used in the URL.
+	So instead of using minDate, I was putting in minDateStr.
+
+Remaining Tests:
+	/post/value ***CHECK***
+	/posts?category=value ***CHECK***
+	/posts?minDate=value ***CHECK***
+	/posts ***CHECK***
